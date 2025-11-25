@@ -4,22 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
     <meta name="description" content="A light and gently sweet breakfast dish or a dessert for picky eaters" />
     <title>Sweet cheese pancakes recipe</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        <a href="/index.html">Sweet Recipe</a>
+        <a class="header-logo" href="/index.html">Sweet Recipe</a>
 
-        <nav>
-            <ul>
-                <li>
-                    <a href="#ingredients">Ingredients</a>
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li class="header-nav-list-item">
+                    <a class="header-nav-list-item-link" href="">Home</a>
                 </li>
-                <li>
-                    <a href="#directions">Directions</a>
+                <li class="header-nav-list-item">
+                    <a class="header-nav-list-item-link" href="">Recipes</a>
+                </li>
+                <li class="header-nav-list-item">
+                    <a class="header-nav-list-item-link" href="">Authors</a>
+                </li>
+                <li class="header-nav-list-item">
+                    <a class="header-nav-list-item-link" href="">Tips</a>
+                </li>
+                <li class="header-nav-list-item">
+                    <a class="header-nav-list-item-link" href="">About us</a>
                 </li>
             </ul>
         </nav>
@@ -27,74 +46,160 @@
 
     <main>
         <!-- Hero section -->
-        <section>
-            <h1>Sweet cheese pancakes</h1>
+        <section class="hero-section">
+            <h1 class="hero-section-title">Sweet cheese pancakes</h1>
             <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/pancakes.jpg"
                 alt="Sweet cheese pancakes served with berries" width="320">
-            <p>
+            <p class="hero-section-text">
                 A light and gently sweet breakfast dish or a dessert for picky eaters.
                 With crispy coating and the light and soft inside, you get a lovely balance of flavors and textures.
                 These delicious pancakes pair perfectly with sour cream and fruit in pretty much any form.
             </p>
-            <a href=" https://instagram.com/goitclub" target="_blank">Author's profile</a>
+        </section>
+
+        <!-- Anchor section -->
+        <section class="anchor-section">
+            <ul class="anchor-section-list">
+                <li class="anchor-section-list-item">
+                    <a class="anchor-section-list-item-link" href="#author" target="_self">Author</a>
+                </li>
+
+                <li class="anchor-section-list-item">
+                    <a class="anchor-section-list-item-link" href="#ingredients" target="_self">Ingredients</a>
+                </li>
+
+                <li class="anchor-section-list-item">
+                    <a class="anchor-section-list-item-link" href="#directions" target="_self">Directions</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Author section -->
+        <section class="author-section">
+            <h2 class="author-section-title" id="author">Author of the sweet recipe</h2>
+
+            <img src="https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg" width="264"
+                alt="A dark-haired man with a beard and mustache, wearing a blue shirt." />
+            <h3 class="author-name">Mark Guerrero</h3>
+            <p class="author-position">Cook's assistant</p>
+
+            <a class="author-section-link" href=" https://instagram.com/goitclub" target="_blank">Author's profile</a>
         </section>
 
         <!-- Ingredients section -->
-        <section>
-            <h2 id="ingredients">Ingredients</h2>
-            <p>The right choice of cheese is extremely important for this dish. Farmer's cheese will suit best. Another
-                alternative is
-                using ricotta or cottage cheese. In this case, the taste and flavor will be slightly different.</p>
-            <ul>
-                <li>2 cups farmer's cheese, homemade</li>
-                <li>3 large eggs</li>
-                <li>3 cups all-purpose flour, plus about 1/2 cup more for dredging</li>
-                <li>3 tablespoons white sugar</li>
-                <li>half teaspoon salt</li>
-                <li>2-3 tablespoons extra light olive oil for each batch</li>
-                <li>fresh fruit, jam, or sour cream for topping</li>
+        <section class="ingredients-section">
+            <h2 class="ingredients-section-title" id="ingredients">Ingredients</h2>
+            <p class="ingredients-section-text">
+                The right choice of cheese is extremely important for this dish. Farmer's cheese will suit best. Another
+                alternative is using ricotta or cottage cheese. In this case, the taste and flavor will be slightly
+                different.</p>
+            <ul lass="ingredients-section-list">
+                <li class="ingredients-section-list-item">
+                    2 cups farmer's cheese, homemade
+                </li>
+
+                <li class="ingredients-section-list-item">
+                    3 large eggs
+                </li>
+
+                <li class="ingredients-section-list-item">
+                    3 cups all-purpose flour, plus about 1/2 cup more for dredging
+                </li>
+
+                <li class="ingredients-section-list-item">
+                    3 tablespoons white sugar
+                </li>
+
+                <li class="ingredients-section-list-item">
+                    half teaspoon salt
+                </li>
+
+                <li class="ingredients-section-list-item">
+                    2-3 tablespoons extra light olive oil for each batch
+                </li>
+
+                <li class="ingredients-section-list-item">
+                    fresh fruit, jam, or sour cream for topping
+                </li>
             </ul>
         </section>
 
         <!-- Directions section -->
-        <section>
-            <h2 id="directions">Directions</h2>
-            <p>Before frying, make sure the oil in the skillet is hot. Test it by sprinkling a bit of flour into the
-                pan. If
-                it
-                sizzles, the temperature is right.</p>
-            <ol>
-                <li>Beat eggs, salt and sugar together in a bowl until smooth.</li>
-                <li>Add flour and farmer's cheese. Mix well until the dough is thick and sticky.</li>
-                <li>Heat a skillet over medium heat, add 2-3 tablespoon oil.</li>
-                <li>Divide dough into portions, form into balls and coat with some flour. With well-floured hands,
-                    flatten
-                    slightly to form
-                    into discs.</li>
-                <li>Once the oil is hot, place the discs and fry until golden brown, 3-5 minutes each side.</li>
-                <li>Serve with your favorite toppings - jam, sour cream, or fruits and berries.</li>
+        <section class="directions-section">
+            <h2 class="directions-section-title" id="directions">Directions</h2>
+            <p class="directions-section-text">
+                Before frying, make sure the oil in the skillet is hot. Test it by sprinkling a bit of flour into the
+                pan. If it sizzles, the temperature is right.
+            </p>
+            <ol class="directions-section-list">
+                <li class="directions-section-list-item">
+                    Beat eggs, salt and sugar together in a bowl until smooth.
+                </li>
+
+                <li class="directions-section-list-item">
+                    Add flour and farmer's cheese. Mix well until the dough is thick and sticky.
+                </li>
+
+                <li class="directions-section-list-item">
+                    Heat a skillet over medium heat, add 2-3 tablespoon oil.
+                </li>
+
+                <li class="directions-section-list-item">
+                    Divide dough into portions, form into balls and coat with some flour. With well-floured hands,
+                    flatten slightly to form into discs.
+                </li>
+
+                <li class="directions-section-list-item">
+                    Once the oil is hot, place the discs and fry until golden brown, 3-5 minutes each side.
+                </li>
+
+                <li class="directions-section-list-item">
+                    Serve with your favorite toppings - jam, sour cream, or fruits and berries.
+                </li>
             </ol>
         </section>
 
         <!-- Footer -->
-        <footer>
-            <a href="/index.html">Sweet Recipe</a>
+        <footer class="footer">
+            <a class="footer-logo" href="/index.html">Sweet Recipe</a>
 
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com/" target="_blank">
+            <nav class="footer-nav">
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-list-item">
+                        <a class="footer-nav-list-item-link" href="">Home</a>
+                    </li>
+                    <li class="footer-nav-list-item">
+                        <a class="footer-nav-list-item-link" href="">Recipes</a>
+                    </li>
+                    <li class="footer-nav-list-item">
+                        <a class="footer-nav-list-item-link" href="">Authors</a>
+                    </li>
+                    <li class="footer-nav-list-item">
+                        <a class="footer-nav-list-item-link" href="">Tips</a>
+                    </li>
+                    <li class="footer-nav-list-item">
+                        <a class="footer-nav-list-item-link" href="">About us</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="footer-social-list">
+                <li class="footer-social-list-item">
+                    <a class="footer-sociall-list-item-link" href="https://www.instagram.com/" target="_blank">
                         <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04insta.svg"
                             alt="Instagram" width="32" height="32">
                     </a>
                 </li>
-                <li>
-                    <a href="https://www.facebook.com/" target="_blank">
+
+                <li class="footer-social-list-item">
+                    <a class="footer-social-list-item-link" href="https://www.facebook.com/" target="_blank">
                         <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04facebook.svg"
                             alt="Facebook" width="32" height="32">
                     </a>
                 </li>
-                <li>
-                    <a href="https://www.youtube.com/" target="_blank">
+
+                <li class="footer-social-list-item">
+                    <a class="footer-social-list-item-link" href="https://www.youtube.com/" target="_blank">
                         <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04youtube.svg"
                             alt="YouTube" width="32" height="32">
                     </a>
