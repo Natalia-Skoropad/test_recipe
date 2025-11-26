@@ -9,10 +9,15 @@
     <meta name="description" content="A light and gently sweet breakfast dish or a dessert for picky eaters" />
     <title>Sweet cheese pancakes recipe</title>
 
-    <!-- Fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Modern Normalize -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Styles -->
     <link rel="stylesheet" href="./css/styles.css" />
@@ -21,190 +26,329 @@
 <body>
     <!-- Header -->
     <header>
-        <a class="header-logo" href="/index.html">Sweet Recipe</a>
+        <div class="container header-container">
+            <a class="header-logo" href="/index.html">SweetRecipe</a>
 
-        <nav class="header-nav">
-            <ul class="header-nav-list">
-                <li class="header-nav-list-item">
-                    <a class="header-nav-list-item-link" href="">Home</a>
-                </li>
-                <li class="header-nav-list-item">
-                    <a class="header-nav-list-item-link" href="">Recipes</a>
-                </li>
-                <li class="header-nav-list-item">
-                    <a class="header-nav-list-item-link" href="">Authors</a>
-                </li>
-                <li class="header-nav-list-item">
-                    <a class="header-nav-list-item-link" href="">Tips</a>
-                </li>
-                <li class="header-nav-list-item">
-                    <a class="header-nav-list-item-link" href="">About us</a>
-                </li>
-            </ul>
-        </nav>
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav-list-item">
+                        <a class="header-nav-list-item-link" href="">Home</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a class="header-nav-list-item-link" href="">Recipes</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a class="header-nav-list-item-link" href="">Authors</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a class="header-nav-list-item-link" href="">Tips</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a class="header-nav-list-item-link" href="">About us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <!-- Hero section -->
         <section class="hero-section">
-            <h1 class="hero-section-title">Sweet cheese pancakes</h1>
-            <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/pancakes.jpg"
-                alt="Sweet cheese pancakes served with berries" width="320">
-            <p class="hero-section-text">
-                A light and gently sweet breakfast dish or a dessert for picky eaters.
-                With crispy coating and the light and soft inside, you get a lovely balance of flavors and textures.
-                These delicious pancakes pair perfectly with sour cream and fruit in pretty much any form.
-            </p>
+            <div class="container hero-section-container">
+                <h1 class="hero-section-title">Sweet cheese pancakes</h1>
+                <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/pancakes.jpg"
+                    alt="Sweet cheese pancakes served with berries" width="320">
+                <p class="hero-section-text">
+                    A light and gently sweet breakfast dish or a dessert for picky eaters.
+                    With crispy coating and the light and soft inside, you get a lovely balance of flavors and textures.
+                    These delicious pancakes pair perfectly with sour cream and fruit in pretty much any form.
+                </p>
+            </div>
         </section>
 
         <!-- Anchor section -->
         <section class="anchor-section">
-            <ul class="anchor-section-list">
-                <li class="anchor-section-list-item">
-                    <a class="anchor-section-list-item-link" href="#author" target="_self">Author</a>
-                </li>
+            <div class="container anchor-section-container">
+                <ul class="anchor-section-list">
+                    <li class="anchor-section-list-item">
+                        <a class="anchor-section-list-item-link" href="#author" target="_self">
+                            Recipe author
+                        </a>
+                    </li>
 
-                <li class="anchor-section-list-item">
-                    <a class="anchor-section-list-item-link" href="#ingredients" target="_self">Ingredients</a>
-                </li>
+                    <li class="anchor-section-list-item">
+                        <a class="anchor-section-list-item-link" href="#ingredients" target="_self">
+                            Recipe ingredients
+                        </a>
+                    </li>
 
-                <li class="anchor-section-list-item">
-                    <a class="anchor-section-list-item-link" href="#directions" target="_self">Directions</a>
-                </li>
-            </ul>
+                    <li class="anchor-section-list-item">
+                        <a class="anchor-section-list-item-link" href="#directions" target="_self">
+                            Cooking directions
+                        </a>
+                    </li>
+
+                    <li class="anchor-section-list-item">
+                        <a class="anchor-section-list-item-link" href="#tips" target="_self">
+                            Cooking tips
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <!-- Author section -->
         <section class="author-section">
-            <h2 class="author-section-title" id="author">Author of the sweet recipe</h2>
+            <div class="container author-section-container">
+                <h2 class="author-section-title" id="author">
+                    Author of the sweet recipe
+                </h2>
 
-            <img src="https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg" width="264"
-                alt="A dark-haired man with a beard and mustache, wearing a blue shirt." />
-            <h3 class="author-name">Mark Guerrero</h3>
-            <p class="author-position">Cook's assistant</p>
+                <img src="https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg" width="264"
+                    alt="A dark-haired man with a beard and mustache, wearing a blue shirt." />
+                <h3 class="author-name">Mark Guerrero</h3>
+                <p class="author-position">Cook's assistant</p>
 
-            <a class="author-section-link" href=" https://instagram.com/goitclub" target="_blank">Author's profile</a>
+                <a class="author-section-link" href=" https://instagram.com/goitclub" target="_blank">
+                    Author's profile
+                </a>
+            </div>
         </section>
 
         <!-- Ingredients section -->
         <section class="ingredients-section">
-            <h2 class="ingredients-section-title" id="ingredients">Ingredients</h2>
-            <p class="ingredients-section-text">
-                The right choice of cheese is extremely important for this dish. Farmer's cheese will suit best. Another
-                alternative is using ricotta or cottage cheese. In this case, the taste and flavor will be slightly
-                different.</p>
-            <ul lass="ingredients-section-list">
-                <li class="ingredients-section-list-item">
-                    2 cups farmer's cheese, homemade
-                </li>
+            <div class="container ingredients-section-container">
+                <h2 class="ingredients-section-title" id="ingredients">
+                    Ingredients
+                </h2>
+                <p class="ingredients-section-text">
+                    The right choice of cheese is extremely important for this dish. Farmer's cheese will suit best.
+                    Another
+                    alternative is using ricotta or cottage cheese. In this case, the taste and flavor will be slightly
+                    different.
+                </p>
 
-                <li class="ingredients-section-list-item">
-                    3 large eggs
-                </li>
+                <table class="ingredients-section-table">
+                    <caption class="ingredients-section-table-caption">
+                        Ingredients list for the cheese pancakes
+                    </caption>
+                    <thead class="ingredients-section-table-thead">
+                        <tr>
+                            <th scope="col" rowspan="2">№ </th>
+                            <th scope="colgroup" colspan="2">For one serving of pancakes</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Product name</th>
+                            <th scope="col">Quantity</th>
+                        </tr>
+                    </thead>
 
-                <li class="ingredients-section-list-item">
-                    3 cups all-purpose flour, plus about 1/2 cup more for dredging
-                </li>
-
-                <li class="ingredients-section-list-item">
-                    3 tablespoons white sugar
-                </li>
-
-                <li class="ingredients-section-list-item">
-                    half teaspoon salt
-                </li>
-
-                <li class="ingredients-section-list-item">
-                    2-3 tablespoons extra light olive oil for each batch
-                </li>
-
-                <li class="ingredients-section-list-item">
-                    fresh fruit, jam, or sour cream for topping
-                </li>
-            </ul>
+                    <tbody>
+                        <tr class="ingredients-section-table-product-row">
+                            <td>1</td>
+                            <td>Farmer's cheese</td>
+                            <td>2 cups</td>
+                        </tr>
+                        <tr class="ingredients-section-table-product-row">
+                            <td>2</td>
+                            <td>Large eggs</td>
+                            <td>3</td>
+                        </tr>
+                        <tr class="ingredients-section-table-product-row">
+                            <td>3</td>
+                            <td>All-purpose flour</td>
+                            <td>3 cups</td>
+                        </tr>
+                        <tr class="ingredients-section-table-product-row">
+                            <td>4</td>
+                            <td>Flour for dredging</td>
+                            <td>1/2 cup more</td>
+                        </tr>
+                        <tr class="ingredients-section-table-product-row">
+                            <td>5</td>
+                            <td>White sugar</td>
+                            <td>3 tablespoons</td>
+                        </tr>
+                        <tr class="ingredients-section-table-product-row">
+                            <td>6</td>
+                            <td>Salt</td>
+                            <td>Half teaspoon</td>
+                        </tr>
+                        <tr class="ingredients-section-table-product-row">
+                            <td>7</td>
+                            <td>Olive oil</td>
+                            <td>2-3 tablespoons</td>
+                        </tr>
+                        <tr class="ingredients-section-table-product-row">
+                            <td>8</td>
+                            <td>Fresh fruit, jam, or sour cream for topping</td>
+                            <td>To your taste</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
         <!-- Directions section -->
         <section class="directions-section">
-            <h2 class="directions-section-title" id="directions">Directions</h2>
-            <p class="directions-section-text">
-                Before frying, make sure the oil in the skillet is hot. Test it by sprinkling a bit of flour into the
-                pan. If it sizzles, the temperature is right.
-            </p>
-            <ol class="directions-section-list">
-                <li class="directions-section-list-item">
-                    Beat eggs, salt and sugar together in a bowl until smooth.
-                </li>
+            <div class="container directions-section-container">
+                <h2 class="directions-section-title" id="directions">
+                    Directions
+                </h2>
+                <p class="directions-section-text">
+                    Before frying, make sure the oil in the skillet is hot. Test it by sprinkling a bit of flour into
+                    the
+                    pan. If it sizzles, the temperature is right.
+                </p>
+                <ol class="directions-section-list">
+                    <li class="directions-section-list-item">
+                        <p class="directions-section-list-text">
+                            Beat eggs, salt and sugar together in a bowl until smooth.
+                        </p>
+                    </li>
 
-                <li class="directions-section-list-item">
-                    Add flour and farmer's cheese. Mix well until the dough is thick and sticky.
-                </li>
+                    <li class="directions-section-list-item">
+                        <p class="directions-section-list-text">
+                            Add flour and farmer's cheese. Mix well until the dough is thick and sticky.
+                        </p>
+                    </li>
 
-                <li class="directions-section-list-item">
-                    Heat a skillet over medium heat, add 2-3 tablespoon oil.
-                </li>
+                    <li class="directions-section-list-item">
+                        <p class="directions-section-list-text">
+                            Heat a skillet over medium heat, add 2-3 tablespoon oil.
+                        </p>
+                    </li>
 
-                <li class="directions-section-list-item">
-                    Divide dough into portions, form into balls and coat with some flour. With well-floured hands,
-                    flatten slightly to form into discs.
-                </li>
+                    <li class="directions-section-list-item">
+                        <p class="directions-section-list-text">
+                            Divide dough into portions, form into balls and coat with some flour. With well-floured
+                            hands,
+                            flatten slightly to form into discs.
+                        </p>
+                    </li>
 
-                <li class="directions-section-list-item">
-                    Once the oil is hot, place the discs and fry until golden brown, 3-5 minutes each side.
-                </li>
+                    <li class="directions-section-list-item">
+                        <p class="directions-section-list-text">
+                            Once the oil is hot, place the discs and fry until golden brown, 3-5 minutes each side.
+                        </p>
+                    </li>
 
-                <li class="directions-section-list-item">
-                    Serve with your favorite toppings - jam, sour cream, or fruits and berries.
-                </li>
-            </ol>
+                    <li class="directions-section-list-item">
+                        <p class="directions-section-list-text">
+                            Serve with your favorite toppings - jam, sour cream, or fruits and berries.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Tips section -->
+        <section class="tips-section">
+            <div class="container tips-section-container">
+                <h2 class="tips-section-title" id="tips">Cooking tips</h2>
+                <p class="tips-section-text">
+                    To make fluffy pancakes, mix the dry and wet ingredients separately, but don't overmix the batter or
+                    it will become
+                    sticky. Fry in a dry, non-stick frying pan over medium heat until bubbles appear on the surface,
+                    then flip.
+                </p>
+                <ul class="tips-section-list">
+                    <li class="tips-section-list-item">
+                        <p class="tips-section-list-text">
+                            Separate mixtures: Mix all dry ingredients (flour, sugar, baking powder, salt) in one bowl
+                            and all liquid ingredients
+                            (eggs, milk, oil, melted butter) in another.
+                        </p>
+                    </li>
+
+                    <li class="tips-section-list-item">
+                        <p class="tips-section-list-text">
+                            Don't overmix: Combine liquid ingredients with dry ingredients, mixing just until combined.
+                            Overmixing will make the
+                            batter sticky.
+                        </p>
+                    </li>
+
+                    <li class="tips-section-list-item">
+                        <p class="tips-section-list-text">
+                            Consistency: The batter should be thicker than pancake batter, but not as thick as pancake
+                            batter—it should spread a
+                            little on the pan.
+                        </p>
+                    </li>
+
+                    <li class="tips-section-list-item">
+                        <p class="tips-section-list-text">
+                            Frying Pan: Fry the pancakes in a well-heated, dry, non-stick frying pan, taking care not to
+                            burn them.
+                        </p>
+                    </li>
+
+                    <li class="tips-section-list-item">
+                        <p class="tips-section-list-text">
+                            Temperature: Start frying on low heat, then increase to medium.
+                            Flipping: Flip the pancake when bubbles appear on the surface.
+                        </p>
+                    </li>
+
+                    <li class="tips-section-list-item">
+                        <p class="tips-section-list-text">
+                            Oil: Do not add too much oil. Grease the pan once with butter or oil before frying, or wipe
+                            it with a paper towel.
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <!-- Footer -->
         <footer class="footer">
-            <a class="footer-logo" href="/index.html">Sweet Recipe</a>
+            <div class="container footer-container">
+                <a class="footer-logo" href="/index.html">SweetRecipe</a>
 
-            <nav class="footer-nav">
-                <ul class="footer-nav-list">
-                    <li class="footer-nav-list-item">
-                        <a class="footer-nav-list-item-link" href="">Home</a>
+                <nav class="footer-nav">
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-list-item">
+                            <a class="footer-nav-list-item-link" href="">Home</a>
+                        </li>
+                        <li class="footer-nav-list-item">
+                            <a class="footer-nav-list-item-link" href="">Recipes</a>
+                        </li>
+                        <li class="footer-nav-list-item">
+                            <a class="footer-nav-list-item-link" href="">Authors</a>
+                        </li>
+                        <li class="footer-nav-list-item">
+                            <a class="footer-nav-list-item-link" href="">Tips</a>
+                        </li>
+                        <li class="footer-nav-list-item">
+                            <a class="footer-nav-list-item-link" href="">About us</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <ul class="footer-social-list">
+                    <li class="footer-social-list-item">
+                        <a class="footer-sociall-list-item-link" href="https://www.instagram.com/" target="_blank">
+                            <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04insta.svg"
+                                alt="Instagram" width="32" height="32">
+                        </a>
                     </li>
-                    <li class="footer-nav-list-item">
-                        <a class="footer-nav-list-item-link" href="">Recipes</a>
+
+                    <li class="footer-social-list-item">
+                        <a class="footer-social-list-item-link" href="https://www.facebook.com/" target="_blank">
+                            <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04facebook.svg"
+                                alt="Facebook" width="32" height="32">
+                        </a>
                     </li>
-                    <li class="footer-nav-list-item">
-                        <a class="footer-nav-list-item-link" href="">Authors</a>
-                    </li>
-                    <li class="footer-nav-list-item">
-                        <a class="footer-nav-list-item-link" href="">Tips</a>
-                    </li>
-                    <li class="footer-nav-list-item">
-                        <a class="footer-nav-list-item-link" href="">About us</a>
+
+                    <li class="footer-social-list-item">
+                        <a class="footer-social-list-item-link" href="https://www.youtube.com/" target="_blank">
+                            <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04youtube.svg"
+                                alt="YouTube" width="32" height="32">
+                        </a>
                     </li>
                 </ul>
-            </nav>
-
-            <ul class="footer-social-list">
-                <li class="footer-social-list-item">
-                    <a class="footer-sociall-list-item-link" href="https://www.instagram.com/" target="_blank">
-                        <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04insta.svg"
-                            alt="Instagram" width="32" height="32">
-                    </a>
-                </li>
-
-                <li class="footer-social-list-item">
-                    <a class="footer-social-list-item-link" href="https://www.facebook.com/" target="_blank">
-                        <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04facebook.svg"
-                            alt="Facebook" width="32" height="32">
-                    </a>
-                </li>
-
-                <li class="footer-social-list-item">
-                    <a class="footer-social-list-item-link" href="https://www.youtube.com/" target="_blank">
-                        <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04youtube.svg"
-                            alt="YouTube" width="32" height="32">
-                    </a>
-                </li>
-            </ul>
+            </div>
         </footer>
     </main>
 </body>
